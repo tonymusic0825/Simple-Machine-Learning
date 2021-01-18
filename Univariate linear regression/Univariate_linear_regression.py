@@ -20,7 +20,7 @@ model = Sequential()
 model.add(Dense(1, input_dim=1))
 
 # Gradient descent alogrithm 
-sgd = SGD(0.00015)
+sgd = SGD(0.001)
 
 # Cost/Loss Function
 model.compile(loss='mse', optimizer=sgd)
